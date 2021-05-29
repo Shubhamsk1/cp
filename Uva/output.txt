@@ -1,0 +1,3 @@
+Case 1: can't determine
+Case 2: can't determine
+0.135

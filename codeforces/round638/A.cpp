@@ -1,0 +1,60 @@
+/* Code by shubhamsk1 */
+/* Shubham S Kudekar */
+#include<bits/stdc++.h>
+#define int long long
+#define for0(i, n) for (int i = 0; i < n; i++)
+#define for1(i, n) for (int i = 1; i <= n; i++)
+#define endl "\n"
+using namespace std;
+/*Declare function prototypes here*/
+void solve();
+
+
+
+/*Declare Global variables here*/
+
+
+
+/* Main function starts from here */
+int32_t main() { 
+/*Fast IO*/ 
+ios_base::sync_with_stdio(false);cin.tie(NULL);
+
+/*Input-output file creation*/
+#ifndef ONLINE_JUDGE 
+freopen("input.txt", "r", stdin); 
+freopen("error.txt", "w", stderr); 
+freopen("output.txt", "w", stdout);
+#endif
+
+int t=1; 
+
+/*is Single Test case?*/cin>>t;
+while(t--)
+{ 
+solve(); 
+cout<<"\n";
+}
+cerr<<"time taken : "<<(float)clock()/CLOCKS_PER_SEC*1000<<" ms"<<endl;
+
+return 0;
+} 
+/*Main function Ends */
+
+
+
+/*Write all function Definition Here */
+void solve() { 
+    int n;
+    cin>>n;
+    int a=0;
+    int b=0;
+    for(int i=1;i<=n-n/2-1;i++){
+        a+=pow(2,i);
+    }
+    a+=pow(2,n);
+    for(int i=n/2;i<n;i++){
+        b+=pow(2,i);
+    }
+    cout<<abs(a-b);
+}

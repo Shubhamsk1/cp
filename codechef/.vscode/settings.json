@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "NFA1.C": "cpp",
+        "stdio.h": "c",
+        "*.txt": "c"
+    }
+}

@@ -1,0 +1,8 @@
+Spoiler You start at depth 0.
+Add as many '(' as are required for first digit.
+After the first digit, add as many '(' or ')' as are required to 
+go from the depth of the first digit to the depth of the second digit. 
+Continue like this until the end of the string.
+Remember to add some ')' at the end to get back to depth 0.
+
+This is obviously optimal - for example you can't go from depth 6 to depth 2 with less than four paranthesis chars.
